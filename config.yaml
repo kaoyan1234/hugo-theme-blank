@@ -1,0 +1,35 @@
+baseurl: "/"
+languageCode: "zh-CN"
+title: "QAQ Land"
+footnotereturnlinkcontents: "↩"
+enableRobotsTXT: true
+copyright: |
+  &copy; [qaqland](https://qaq.land) 1919 -- {Year} | [Github](https://github.com/qaqland) | [Gitlab](https://gitlab.com/qaqland)   
+  build with Hugo and X-Min.
+
+permalinks:
+  /: /:year/:title
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: About
+      url: "2022/about/"
+      weight: 2
+    - name: Tags
+      url: "tags/"
+      weight: 3
+    - name: RSS
+      url: "index.xml"
+
+taxonomies:
+  tag: tags
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true

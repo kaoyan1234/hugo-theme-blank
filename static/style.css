@@ -1,0 +1,86 @@
+body {
+    max-width: 800px;
+    margin: auto;
+    padding: 1em;
+    line-height: 1.5;
+}
+.menu {
+    padding: 0;
+}
+.menu li {
+    display: inline-block;
+    margin: auto 2px;
+}
+.menu a {
+    text-decoration: none;
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.menu,
+footer {
+    text-align: center;
+}
+.title {
+    font-size: 1.1em;
+}
+footer a {
+    text-decoration: none;
+}
+hr {
+    border: 0;
+    height: 0;
+}
+
+pre {
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 5px #eee;
+    padding: 1em;
+    overflow-x: auto;
+}
+code {
+    background: #f9f9f9;
+}
+pre code {
+    background: none;
+}
+
+main {
+    hyphens: auto;
+}
+blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    padding: 3px 1em 3px;
+}
+img,
+iframe,
+video {
+    max-width: 100%;
+}
+table {
+    margin: auto;
+}
+table thead th,
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+th,
+td {
+    padding: 5px;
+}
+thead,
+tfoot,
+tr:nth-child(even) {
+    background: #eee;
+}
+
+body {
+    font-family: Optima, Candara, Calibri, Arial, sans-serif;
+}
+
+code {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 85%;
+}
