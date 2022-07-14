@@ -1,14 +1,18 @@
 baseurl: "/"
 languageCode: "zh-CN"
-title: "QAQ Land"
+title: "QAQ LAND"
 footnotereturnlinkcontents: "↩"
 enableRobotsTXT: true
 copyright: |
-  &copy; [qaqland](https://qaq.land) 1919 -- {Year} | [Github](https://github.com/qaqland) | [Gitlab](https://gitlab.com/qaqland)   
-  build with Hugo and X-Min.
+  &copy; [QAQ](https://qaq.land) 1919 -- {Year} | [Github](https://github.com/qaqland) | [Gitlab](https://gitlab.com/qaqland)   
+  built with Hugo and X-Min.
+
+disableKinds: ["taxonomy"]
+ignoreErrors: ["error-disable-taxonomy"]
 
 permalinks:
-  /: /:year/:title
+  /: /:year/:filename/
+  night: /:section/:year/:yearday/
 
 menu:
   main:
@@ -18,17 +22,8 @@ menu:
     - name: About
       url: "2022/about/"
       weight: 2
-    - name: Tags
-      url: "tags/"
-      weight: 3
-    - name: Night
-      url: "night/"
-      weight: 4
     - name: RSS
       url: "index.xml"
-
-taxonomies:
-  tag: tags
 
 markup:
   highlight:

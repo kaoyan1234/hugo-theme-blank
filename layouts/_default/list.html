@@ -1,6 +1,6 @@
-{{ define "main" }}
+{{ define "main" -}}
 <h1>{{ .Title }}</h1>
-{{ .Content }}
+{{- .Content }}
 <ul>
   {{ range .Pages -}}
   <li>
@@ -9,4 +9,4 @@
   </li>
   {{- end }}
 </ul>
-{{ end }}
+{{- end }}

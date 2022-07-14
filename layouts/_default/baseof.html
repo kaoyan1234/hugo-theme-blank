@@ -18,9 +18,9 @@
   {{ block "main" . }}{{ end }}
   <footer>
     <hr />
-    {{ with .Site.Copyright }}
+    {{- with .Site.Copyright }}
     {{ replace . "{Year}" now.Year | markdownify}}
-    {{ end }}
+    {{ end -}}
   </footer>
 </body>
 </html>
