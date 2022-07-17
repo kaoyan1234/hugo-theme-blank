@@ -4,8 +4,8 @@ title: "QAQ LAND"
 footnotereturnlinkcontents: "↩"
 enableRobotsTXT: true
 copyright: |
-  &copy; [QAQ](https://qaq.land) 1919 -- {Year} | [Github](https://github.com/qaqland) | [Gitlab](https://gitlab.com/qaqland)   
-  built with Hugo and X-Min.
+  &copy;[QAQ](https://qaq.land) 1919 -- {Year} | [Github](https://github.com/qaqland) | [Gitlab](https://gitlab.com/qaqland)   
+  Made with [Hugo](https://gohugo.io/).
 
 disableKinds: ["taxonomy"]
 ignoreErrors: ["error-disable-taxonomy"]

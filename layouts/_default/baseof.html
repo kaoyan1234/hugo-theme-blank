@@ -9,17 +9,15 @@
 </head>
 
 <body>
-  <nav>
-    <ul class="menu">
+  <nav class="menu">
+    <ul>
       {{ range .Site.Menus.main -}}
       <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{- end }}
     </ul>
-    <hr />
   </nav>
   {{ block "main" . }}{{ end }}
   <footer>
-    <hr />
     {{- with .Site.Copyright }}
     {{ replace . "{Year}" now.Year | markdownify}}
     {{ end -}}

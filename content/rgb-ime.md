@@ -12,9 +12,9 @@ rgb(255, 0, 0)
 可能这个颜色比较特殊，我们称之为 Red
 
 | methods                 | pros and cons |
-| ----------------------- | ------------- |
-| color picker by mouse   | 连续          |
-| color codes table/chart | 精准          |
+| ----------------------- | :-----------: |
+| color picker by mouse   |     连续      |
+| color codes table/chart |     精准      |
 
 抛开离散的成本不谈，连续可以带来更好的（声码）模糊输入
 
