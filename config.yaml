@@ -10,6 +10,7 @@ copyright: |
 disableKinds: ["taxonomy"]
 ignoreErrors: ["error-disable-taxonomy"]
 
+relativeURLs: true
 permalinks:
   /: /:year/:filename/
   night: /:section/:year/:yearday/
@@ -31,3 +32,6 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+minify:
+  disableJS: true

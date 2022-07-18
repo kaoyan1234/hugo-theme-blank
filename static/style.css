@@ -18,19 +18,36 @@ footer {
 
 .menu li {
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 6px;
 }
 
 .menu a {
-    /* text-decoration: none; */
     background: #eee;
     padding: 5px;
     border-radius: 5px;
 }
 
+.list {
+    padding: 0;
+}
+
+.list li {
+    display: flex;
+    border-bottom: 1px solid #d8dae1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 3px 8px;
+}
+
+.menu a,
+.list a,
+footer a {
+    text-decoration: none;
+}
+
 a {
     color: #3273dc;
-    text-decoration: none;
 }
 
 hr {

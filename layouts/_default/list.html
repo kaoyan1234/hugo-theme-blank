@@ -1,11 +1,11 @@
 {{ define "main" -}}
 <h1 class="title">{{ .Title }}</h1>
 {{- .Content }}
-<ul>
+<ul class="list">
   {{ range .Pages -}}
-  <li class="list">
-    <span>{{ .Date.Format "2006/01/02" }}</span>
+  <li>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <small>{{ .Date.Format "2006/01/02" }}</small>
   </li>
   {{- end }}
 </ul>
