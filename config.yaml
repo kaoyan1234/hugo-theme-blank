@@ -3,6 +3,7 @@ languageCode: "zh-CN"
 title: "QAQ LAND"
 footnotereturnlinkcontents: "↩"
 enableRobotsTXT: true
+contentDir: posts
 copyright: |
   &copy;[QAQ](https://qaq.land) 1919 -- {Year} | [Github](https://github.com/qaqland) | [Gitlab](https://gitlab.com/qaqland)   
   Made with [Hugo](https://gohugo.io/).
