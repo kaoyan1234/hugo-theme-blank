@@ -7,7 +7,7 @@ DEMO (my blog) → [here](https://qaq.land)
 # Modify
 
 ```
-git clone https://gitlab.com/qaqland/qaqland.git
+git clone xxx
 ```
 
 More in Wiki
