@@ -17,6 +17,7 @@
     </ul>
   </nav>
   {{ block "main" . }}{{ end }}
+  <br>
   <footer>
     {{- with .Site.Copyright }}
     {{ replace . "{Year}" now.Year | markdownify}}
