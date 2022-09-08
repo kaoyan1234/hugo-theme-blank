@@ -17,14 +17,15 @@ date: 2022-07-24T07:07:06+08:00
 ;; 新变量
 ;;
 ;; (类型)+ `:` + 变量名 + (修饰)
-;; 修饰：`!` 不可变，`?` 可 nil
+;; 修饰：`!`不可变、`?`可 nil
 (i64:foo! 2)
 
 ;; 方法
 ;;
 ;; Put Set Get Delete
+;; Set: Default
 ;; Put: RAW Set
-;; Get: not for default
+;; Get: not for default value, eg. (get array [2])
 
 ;; 复杂结构 TODO
 ;;
@@ -39,20 +40,20 @@ date: 2022-07-24T07:07:06+08:00
 ;; 定义
 (void:foo (
     |i64:a (i64:b 1)|
-    (fmt println a b)
+    (fmt::println a b)
 ))
 
 ;; 调用
 (foo 2 3)
 
 ;; 接口
-(interface:fmt
+(type:fmt
     ()
     ()
 )
 
 ;; 方法
-(impl bar for fmt
+(impl fmt:bar
     ()
     ()
 )
@@ -85,13 +86,14 @@ date: 2022-07-24T07:07:06+08:00
 
 ;; if + do == with
 (with true
-    (true 1 do)
-    (true 2 do)
-    (true 3 do)
+    (true do 1)
+    (true do 2)
+    (true do 3)
 )
 
 ;; if + elseif == when
-(when enum:foo
+(enum:foo)
+(when foo
     () ()
     () ()
        ()
@@ -110,16 +112,15 @@ date: 2022-07-24T07:07:06+08:00
 
 ;; 加点东西
 ;; 不同生命周期的条件
-(while
+(for
     {() () ()}
     ()
     ...
 )
 
-;; for iter
-(for |:k :v| (iter kv)
-    (fmt println k v)
-    (fmt println "next >> ")
+;; map iter
+(map |:k :v| (iter kv)
+    (fmt::println k v)
 )
 ```
 
@@ -127,13 +128,37 @@ date: 2022-07-24T07:07:06+08:00
 
 ```lisp
 ;; 加载
-(import:std/fmt)
+(import std::fmt)
 
 ;; 卸载
 (delete fmt)
 
 ;; 导出
-(export:hello_world)
+(export hello_world)
+```
+
+# 语法糖
+
+```lisp
+;; 第一个参数的位置改变
+;;
+;; 使用 @ 表明它为第一个函数参数
+;; (str:var_A "你好")
+
+;; 0
+(fmt::println var_A)
+;; 1
+(@ var_A fmt::println)
+;; 2
+(@var_A fmt::println)
+
+;; 短行括号
+;;
+;; 有时内容过短，使用括号不是很美观
+;; 0
+(fmt::println "你好")
+;; 1
+fmt::println "你好" ;
 ```
 
 # 胡言乱语
@@ -147,5 +172,5 @@ date: 2022-07-24T07:07:06+08:00
 
 ;; 简写个指针（bushi）
 ;; 有点不协调
-&(+ 1 2)
+'(+ 1 2)
 ```
