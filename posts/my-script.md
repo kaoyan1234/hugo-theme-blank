@@ -29,9 +29,14 @@ date: 2022-07-24T07:07:06+08:00
 
 ;; 复杂结构 TODO
 ;;
-;; struct
+;; data
 ;;
-;; table
+;; type
+(type:rna
+    (:a )
+    (:b )
+    (:c )
+)
 ```
 
 # 函数
@@ -45,6 +50,9 @@ date: 2022-07-24T07:07:06+08:00
 
 ;; 调用
 (foo 2 3)
+
+;; 参数
+(fmt::println --stdout io "你好")
 
 ;; 接口
 (type:fmt
