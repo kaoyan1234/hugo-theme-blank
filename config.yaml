@@ -20,6 +20,9 @@ menu:
       weight: 1
     - name: About
       url: "2022/about/"
+      weight: 3
+    - name: Bilike
+      url: "/bilike/"
       weight: 2
     - name: RSS
       url: "index.xml"

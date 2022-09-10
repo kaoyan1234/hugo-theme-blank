@@ -1,6 +1,8 @@
 ---
 title: "About"
 date: 2022-06-27T20:34:18+08:00
+_build:
+  list: never
 ---
 
 主题是我从 [yihui/hugo-xmin](https://github.com/yihui/hugo-xmin) 魔改来的，因为做的比较懒就不开源了。改了改结构，便于以后根据官方的文档进一步修缮，也没有用 `themes/xmin` 这种文件树因为本来内容就不多。
