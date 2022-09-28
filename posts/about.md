@@ -10,5 +10,11 @@ _build:
 博客以后应该会写一些关于 **中国近代史** **计算机编程** **沙雕想法** 等的相关内容；联系我亦或交换友链发邮件至下面的邮箱 q(≧▽≦q)
 
 ```
-dongsogo # hotmail # com
+dongsogo # hotmail . com
+```
+
+我的 Github Gitlab 提交、签名邮箱：
+
+```
+qaq # qaq . land
 ```
