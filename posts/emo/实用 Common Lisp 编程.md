@@ -1,5 +1,6 @@
 ---
-title: "实用 Common Lisp 编程"
+title: "#实用 Common Lisp 编程"
+slug: Practical Common Lisp
 date: 2022-07-24T15:41:26+08:00
 ---
 

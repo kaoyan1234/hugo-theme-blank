@@ -1,6 +1,6 @@
 {{ define "main" }}
 <h1 class="title" title={{ print (.Date.Format "2006/01/02" ) }}>
-    {{ if ne .Type "page" }}{{ .Type }} - {{ end }}
+    {{ if ne .Type "page" }}{{ .Type | upper  }} - {{ end }}
     {{ .Title }}
 </h1>
 <main>

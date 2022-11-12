@@ -1,5 +1,5 @@
 ---
-title: "Usb PWM Fan"
+title: "USB PWM Fan"
 date: 2022-07-21T09:23:06+08:00
 ---
 

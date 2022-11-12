@@ -5,8 +5,9 @@ footnotereturnlinkcontents: "↩"
 enableRobotsTXT: true
 contentDir: posts
 copyright: |
-  &copy; 1919 -- {Year} [QAQ](https://qaq.land) | [Github](https://github.com/qaqland) | [Gitlab](https://gitlab.com/qaqland)   
-  Made with [Hugo](https://gohugo.io/).
+  &copy;2020 -- {Year} [QAQ](https://qaq.land) | [Github](https://github.com/qaqland) | [Gitlab](https://gitlab.com/qaqland)   
+  Made with [Hugo](https://gohugo.io/).    
+  
 
 relativeURLs: true
 permalinks:
@@ -15,17 +16,20 @@ permalinks:
 
 menu:
   main:
-    - name: Home
-      url: ""
+
+    - name: Posts
+      url: "/"
       weight: 1
+    - name: EMO?
+      url: "/emo/"
+      weight: 2    
+    - name: Links
+      url: "/2022/links/"
+      weight: 3        
     - name: About
       url: "2022/about/"
-      weight: 3
-    - name: Bilike
-      url: "/bilike/"
-      weight: 2
-    - name: RSS
-      url: "index.xml"
+      weight: 4
+
 
 markup:
   highlight:
